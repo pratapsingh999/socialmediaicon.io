@@ -36,3 +36,162 @@
     transform: rotate(360deg);
   }
 }
+.social-media-icon {
+  color: white;
+  border: none;
+  border-radius: 30%;
+  height: 40px;
+  width: 40px;
+}
+.facebook {
+  background-color: #4267b2;
+}
+.facebook:hover {
+  background-color: #1b5ee4;
+}
+.Twitter {
+  background-color: #1da1f2;
+}
+.Twitter:hover {
+  background-color: #0495ef;
+}
+.Google {
+  background-color: #c4302b;
+}
+.Google:hover {
+  background-color: #e01b09;
+}
+.Github {
+  background-color: black;
+}
+.Github:hover {
+  background-color: rgb(28, 28, 28);
+}
+.Instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.Instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #d7c714 0%,
+    #57510d 5%,
+    #b5190a 45%,
+    #ea08a3 60%,
+    #0944f8 90%
+  );
+}
+.facebooks {
+  background-color: #0495ef;
+  color: white;
+}
+.font {
+  color: wheat;
+}
+.texte {
+  color: black;
+}
+.wrapper {
+  margin-top: 100px;
+}
+.icon {
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  float: column;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+}
+
+/* .icon:hover{
+opacity: 1;
+pointer-events: auto;
+} */
+.spa {
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.fonts {
+  font-size: 30px;
+  /* line-height: 600px; */
+  margin-top: 16px;
+}
+.tooltips {
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  padding: 5px 15px;
+  border-radius: 30px;
+  position: absolute;
+  /* top: 170px; */
+  /* top: -70px; */
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.tooltips::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(50deg);
+  /* transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55); */
+}
+.wrapper .icon:hover .tooltips {
+  opacity: 1;
+  pointer-events: auto;
+  top: -70px;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltips {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebooka:hover span,
+.wrapper .facebooka:hover .tooltips,
+.wrapper .facebooka:hover .tooltips::before {
+  background: #3b5999;
+  color: white;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltips,
+.wrapper .twitter:hover .tooltips::before {
+  background: #46c1f6;
+  color: white;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltips,
+.wrapper .youtube:hover .tooltips::before {
+  background: #de463b;
+  color: white;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltips,
+.wrapper .github:hover .tooltips::before {
+  background: #333;
+  color: white;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltips,
+.wrapper .instagram:hover .tooltips::before {
+  background: #e1306c;
+  color: white;
+}
